@@ -16,7 +16,7 @@
 <body>
 
     <input type="checkbox" name="" id="toggle">
-    <!--header start-->
+    
     <header class="header">
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -39,10 +39,9 @@
             </div>
         </div>
     </header>
-    <!--header end-->
-    <!--home section start-->
+    
     <section class="home-section">
-        <!--slide start-->
+        
         <div class="slide active" style="background-image: url('image/background.jpg'); ">
           <div class="container"> 
             <div class="row1 align-items-center">
@@ -54,17 +53,11 @@
             </div>
           </div> 
         </div>
-        <!--slide end-->
-        <!--slide start-->
         
-          <!--slide end-->
-          <!--slide start-->
-        
-          <!--slide end-->
+
     </section>
-    <!--home section end-->
     
-    <!--service section start-->
+    
     <div class="service-container" >
        <div class="service-row"data-aos="fade-right">
            <div class="column-66">
@@ -98,18 +91,7 @@
             </div>
         </div> 
      </div>
-    <!--service section end-->
-    
-    <!--reservation section-->
-    
-    <!--reservation section end-->
-
-    <!--chef section start-->
-    
-    <!--chef section end-->
-    <!--menu section-->
-    
-    <!--menu section end-->
+   
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -119,7 +101,6 @@
 
 
    
-<!--Alert on Submit-->
         <div id="popup" class="popup center">
         <div class="icon">
           <i class="fa-fa check"></i>
@@ -138,7 +119,6 @@
           </button>
         </div>
       </div>
-<!--Alert on Submit end-->
 
         <div class="text-content">
             <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">Get in Touch</h1>
@@ -149,22 +129,22 @@
         
 
         <div class="contact-in">
-            <!--adding map-->
             
 
 			<div class="contact-form" data-aos="flip-center">
 				<h1>Contact Us</h1>
+                <form id="contact-form" action="contact.php" method="POST">
 			
 					<input id="contname" type="text" placeholder="Name" class="contact-form-txt" />
 					<input id="contemail" type="text" placeholder="Email" class="contact-form-txt" />
 					<textarea id="contmessage" placeholder="Message" class="contact-form-textarea"></textarea>
 					<button id="open-popup-btn" class="contact-form-btn">Submit</button>
+                    </form>
 				
 			</div>
 		</div>
     </section>
 
-        <!--restaurant-info start-->
         <section class="info text-center" id="info" style="padding: 90px 0;">
             <div class="container">
                 <div class="section-heading my-5 text-center">
@@ -208,7 +188,6 @@
             </div>
     
         </section>
-        <!--restaurant-info end-->
 
 
 </body>

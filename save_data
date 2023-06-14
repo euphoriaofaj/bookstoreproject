@@ -1,0 +1,23 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if (empty($name) || empty($email) || empty($password)) {
+        echo "Please fill in all fields.";
+        exit;
+    }
+
+    
+    $data = "Name: $name\nEmail: $email\nPassword: $password\n\n";
+
+    
+    $file = fopen('user_data.txt', 'a');
+    fwrite($file, $data);
+    fclose($file);
+
+    echo "Registration successful!";
+    exit;
+}
+?>

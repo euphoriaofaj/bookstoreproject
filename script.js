@@ -18,7 +18,6 @@ $(window).on("load",function(){
 });
 
 
-// on scroll
 $(window).scroll(function(){
     if($(window).scrollTop() > 0){
         $(".header").addClass("sticky");
@@ -44,5 +43,4 @@ window.onload=function(){
     
    
   
-/*google maps */
   
